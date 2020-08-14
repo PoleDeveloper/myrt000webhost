@@ -1,0 +1,11 @@
+/* input s */
+.form-input-wb{
+
+}
+.form-input-wb:focus{
+  border-color: none;
+}
+.div-input{
+  margin: 5px 2px;
+}
+/* input e */

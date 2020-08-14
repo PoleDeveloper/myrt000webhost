@@ -1,0 +1,27 @@
+/*
+.pload-bar1-outer{
+    position: relative;
+    width: 150px;
+    height: 4px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.pload-bar1-inner{
+    position: absolute;
+    width: 20%;
+    left: -40%;
+    height: 100%;
+    background-color: #1900ff;
+    transition: 1s;
+    animation: pload-bar1-anim 1.8s infinite;
+}
+@keyframes pload-bar1-anim{
+    0% {left: -40%;}
+    30% {width: 60%;}
+    80% {width: 20%;}
+    100% {left: 100%;}
+}
+*/

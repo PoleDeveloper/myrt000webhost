@@ -1,0 +1,12 @@
+<div id="offlinealertdiv" style="position: fixed;top: 0px;right: 0px;left: 0px;bottom: 0px;width: 100%;height: 100%;z-index: 20;background-color: white;display: none;padding: 5px;">
+    <h1>Maaf Anda Sedang Offline</h1>
+    <p>Silahkan Periksa Koneksi Internet Anda</p>
+</div>
+<script>
+function offlinefunction(){
+    document.getElementById("offlinealertdiv").style.display = "block";
+}
+function onlinefunction(){
+    document.getElementById("offlinealertdiv").style.display = "none";
+}
+</script>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<settings>
+    <kastype>
+        <type>1</type>
+        <name>Basic FREE</name>
+        <kasheadmax>5</kasheadmax>
+        <kasinnermax>30</kasinnermax>
+        <price>0</price>
+        <comment></comment>
+    </kastype>
+    <kastype>
+        <type>2</type>
+        <name>Basic</name>
+        <kasheadmax>20</kasheadmax>
+        <kasinnermax>50</kasinnermax>
+        <price>10000</price>
+        <comment></comment>
+    </kastype>
+    <kastype>
+        <type>3</type>
+        <name>Regular</name>
+        <kasheadmax>20</kasheadmax>
+        <kasinnermax>50</kasinnermax>
+        <price>20000</price>
+        <comment></comment>
+    </kastype>
+</settings>

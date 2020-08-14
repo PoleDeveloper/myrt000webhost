@@ -1,0 +1,60 @@
+<div onclick="errordive();" status="" id="parent-error-notif-page" style="position: fixed;top: 0px;right: 0px;left: 0px;bottom: 0px;z-index: 10;background-color: rgba(51, 51, 51, 0.7);display: none;">
+    <div class="error-notif-page-div ld" style="animation-duration: 0.5s;">
+        <div id="error-div-title" class="error-notif-page-div2">
+            
+        </div>
+        <div id="error-div-txt" class="error-notif-page-div3">
+        
+        </div>
+    </div>
+</div>
+<script>
+    /* 
+    script dasar memanggil 
+        errordiv1s(title, text, countdown, type)");
+    */
+    window.onscroll = function() {
+        var status = $("#parent-error-notif-page").attr("status");
+        if(status == 1){
+            var x=window.scrollX;
+            var y=window.scrollY;
+            window.onscroll=function(){window.scrollTo(x, y);};
+        }
+    };
+    function errordiv1s(title, text, countdown, type){
+        $("#parent-error-notif-page").attr("status", "1");
+        $("#parent-error-notif-page").fadeIn();
+        if(type == "error"){
+            $(".error-notif-page-div").css({"background-color":"#c83349"});
+        }else if(type == "success"){
+            $(".error-notif-page-div").css({"background-color":"#4fc82a"});
+        }else{
+            $(".error-notif-page-div").css({"background-color":"#e9ebee"});
+        }
+        $("#error-div-title").html(title+"<br><hr style='color: white;background-color: white;'>");
+        $("#error-div-txt").html(text+" <a id='error-count-down'></a>");
+        if(countdown !== "0"){
+            errorcountdown(countdown);
+        }
+        $(".error-notif-page-div").fadeIn().removeClass("ld-power-off").addClass("ld-power-on");
+    }
+    function errordive(){
+        $("#parent-error-notif-page").attr("status", "0");
+        $("#parent-error-notif-page").fadeOut();
+        $(".error-notif-page-div").removeClass("ld-power-on").addClass("ld-power-off").fadeOut();
+        window.onscroll=function(){};
+    }
+    var errorcountnum = "";
+    function errorcountdown(count){
+        errorcountnum = count;
+        $("#error-count-down").html("( "+errorcountnum+" )");
+        setTimeout(function(){
+            errorcountnum = errorcountnum - 1;
+            if(errorcountnum == 0){
+                errordive();
+            }else{
+                errorcountdown(errorcountnum);
+            }
+        }, 1000);
+    }
+</script>

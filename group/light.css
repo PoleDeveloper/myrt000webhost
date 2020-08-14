@@ -1,0 +1,55 @@
+body,
+html{
+    font-family: Arial;
+    background-color: #e9ebee;
+}
+.formdiv{
+    width: 350px;
+    padding: 10px 15px;
+    margin: auto;
+    background-color: rgb(245, 245, 245);
+    border-top-right-radius: 40px;
+}
+.forminput{
+    outline: none;
+    width: 100%;
+    padding: 4px 7px;
+    margin: 10px 0px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(0, 15, 180);
+    color: black;
+    background-color: transparent;
+    transition: 0.4s;
+}
+.divbody{
+    top: 40px;
+    position: relative;
+    margin: auto;
+    width: 400px;
+}
+.btnq{
+    width: 100%;
+    margin: 5px 5px;
+}
+
+/* page 3 s */
+#page3_output{
+    background-color: rgb(245, 245, 245);
+}
+.hsearch{
+    margin: 6px 4px;
+    padding: 7px 4px;
+}
+
+@media screen and (max-width: 410px){
+    .divbody{
+        width: 98%;
+    }
+}
+@media screen and (max-width: 360px){
+    .formdiv{
+        width: 98%;
+    }
+}
