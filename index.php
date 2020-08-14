@@ -12,6 +12,9 @@ if($_SESSION['myrt4ucookiestat'] == null){
     header("Location: load/");
 }
 
+
+/* change */
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
