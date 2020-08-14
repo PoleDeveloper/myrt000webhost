@@ -1,4 +1,6 @@
 <?php
+/* file index.php yang lama, gunakan index.php yang baru */
+
 include "config/config_all.php";
 /*deny to open iside iframe*/
 header("X-Frame-Options: DENY");
